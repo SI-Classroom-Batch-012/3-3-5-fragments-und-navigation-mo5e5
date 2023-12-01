@@ -9,26 +9,26 @@
         android:id="@+id/headline_ET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="@color/black"
         android:hint="@string/headline_placeholder"
+        android:inputType="text"
         android:textColor="?attr/colorPrimary"
         android:textColorHint="?attr/colorPrimary"
-        android:backgroundTint="@color/black"
         android:textSize="28sp"
-        android:inputType="text"
-        android:autofillHints=""
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/contentLine_ET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:backgroundTint="@color/black"
         android:hint="@string/contentLine_placeholder"
         android:inputType="text"
-        android:textSize="28sp"
         android:textColor="?attr/colorPrimary"
         android:textColorHint="?attr/colorPrimary"
-        android:autofillHints=""
+        android:textSize="28sp"
         tools:ignore="VisualLintTextFieldSize" />
 
 </LinearLayout>
