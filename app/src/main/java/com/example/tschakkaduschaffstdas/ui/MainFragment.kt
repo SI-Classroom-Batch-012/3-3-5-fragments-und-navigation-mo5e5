@@ -25,8 +25,6 @@ class MainFragment : Fragment() {
 
         val navController = findNavController()
 
-
-
         binding.homeBTN.setOnClickListener {
             navController.navigate(MainFragmentDirections.actionMainFragmentToHomeFragment())
         }
