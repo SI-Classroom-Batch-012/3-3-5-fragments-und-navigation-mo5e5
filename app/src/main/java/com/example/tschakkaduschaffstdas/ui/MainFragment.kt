@@ -28,5 +28,9 @@ class MainFragment : Fragment() {
         binding.homeBTN.setOnClickListener {
             navController.navigate(MainFragmentDirections.actionMainFragmentToHomeFragment())
         }
+
+        binding.addFAB.setOnClickListener {
+            navController.navigate(MainFragmentDirections.actionMainFragmentToDetailFragment())
+        }
     }
 }
