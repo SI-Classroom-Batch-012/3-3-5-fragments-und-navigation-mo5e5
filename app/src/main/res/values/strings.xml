@@ -17,7 +17,7 @@
 
     <!-- Placeholder -->
     <string name="placeholder">Placeholder</string>
-    <string name="headline_placeholder">Hier Überschrift!</string>
-    <string name="contentLine_placeholder">Hier eine Info!</string>
+    <string name="headline_placeholder">headline!</string>
+    <string name="contentLine_placeholder">note!</string>
 
 </resources>

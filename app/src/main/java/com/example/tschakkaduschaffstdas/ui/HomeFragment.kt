@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import com.example.tschakkaduschaffstdas.MainActivity
+import com.example.tschakkaduschaffstdas.R
 import com.example.tschakkaduschaffstdas.data.model.Info
 import com.example.tschakkaduschaffstdas.databinding.FragmentHomeBinding
 import com.example.tschakkaduschaffstdas.ui.adapter.ItemAdapter
@@ -50,32 +51,28 @@ class HomeFragment : Fragment() {
     private fun addNoteDialog() {
 
         val dialogBuilder = AlertDialog.Builder(requireContext())
+        val inflater = requireActivity().layoutInflater
+        val dialogView = inflater.inflate(R.layout.add_note_dialog, null)
 
-        dialogBuilder.setTitle("add note")
-        val headlineET = EditText(requireContext())
-        val contentET = EditText(requireContext())
-        dialogBuilder.setView(headlineET)
-        dialogBuilder.setView(contentET)
+        val headlineET = dialogView.findViewById<EditText>(R.id.headline_ET)
+        val contentET = dialogView.findViewById<EditText>(R.id.contentLine_ET)
 
-        dialogBuilder.setPositiveButton("add Note") { _, _ ->
+        dialogBuilder.setView(dialogView)
+            .setTitle("Add Note")
+            .setPositiveButton("add note") { _, _ ->
+                val textHeadlineInput = headlineET.text.toString()
+                val textContentLineInput = contentET.text.toString()
 
-            val textHeadlineInput = headlineET.text.toString()
-            val textContentLineInput = contentET.text.toString()
+                val myNote = Info(textHeadlineInput, textContentLineInput)
 
-            val myNote = Info(textHeadlineInput, textContentLineInput)
+                mainActivity.addInfo(myNote)
+                adapter.newData(mainActivity.dataset)
+                binding.mainRV.scrollToPosition(0)
+            }
 
-            mainActivity.addInfo(myNote)
-
-            adapter.newData(mainActivity.dataset)
-
-            binding.mainRV.scrollToPosition(0)
-
-        }
-
-        dialogBuilder.setNegativeButton("cancel") { dialogInterface, _ ->
-            dialogInterface.cancel()
-        }
-
-        dialogBuilder.show()
+            .setNegativeButton("cancel") { dialogInterface, _ ->
+                dialogInterface.cancel()
+            }
+            .show()
     }
 }
