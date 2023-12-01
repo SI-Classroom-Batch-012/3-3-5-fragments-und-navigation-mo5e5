@@ -3,9 +3,11 @@ package com.example.tschakkaduschaffstdas.ui.adapter
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tschakkaduschaffstdas.data.model.Info
 import com.example.tschakkaduschaffstdas.databinding.ListItemBinding
+import com.example.tschakkaduschaffstdas.ui.HomeFragmentDirections
 
 class ItemAdapter(private var dataset: List<Info>) :
     RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
@@ -32,5 +34,9 @@ class ItemAdapter(private var dataset: List<Info>) :
         holder.binding.headlineMTV.text = content.headline
         holder.binding.contentLineMTV.text = content.contentLine
 
+        holder.binding.noteCard.setOnClickListener {
+            val navController = holder.itemView.findNavController()
+            navController.navigate(HomeFragmentDirections.actionHomeFragmentToDetailFragment())
+        }
     }
 }
