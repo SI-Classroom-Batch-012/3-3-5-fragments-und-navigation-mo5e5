@@ -30,5 +30,6 @@ class DetailFragment : Fragment() {
 
         binding.headlineMTV.text = content.headline
         binding.contentLineMTV.text = content.contentLine
+
     }
 }

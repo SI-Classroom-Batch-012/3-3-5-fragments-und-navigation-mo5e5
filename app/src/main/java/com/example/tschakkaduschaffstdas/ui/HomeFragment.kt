@@ -33,8 +33,8 @@ class HomeFragment : Fragment() {
         mainActivity = activity as MainActivity
 
         dataset = mainActivity.dataset
-
         adapter = ItemAdapter(dataset)
+
         binding.mainRV.adapter = adapter
 
         binding.addBTN.setOnClickListener {
