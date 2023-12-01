@@ -31,5 +31,6 @@ class ItemAdapter(private var dataset: List<Info>) :
 
         holder.binding.headlineMTV.text = content.headline
         holder.binding.contentLineMTV.text = content.contentLine
+
     }
 }

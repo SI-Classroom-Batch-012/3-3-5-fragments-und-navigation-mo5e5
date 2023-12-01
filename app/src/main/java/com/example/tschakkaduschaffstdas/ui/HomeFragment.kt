@@ -20,7 +20,6 @@ class HomeFragment : Fragment() {
     private lateinit var adapter: ItemAdapter
     private lateinit var mainActivity: MainActivity
 
-
     private var dataset: List<Info> = emptyList()
 
 
@@ -36,7 +35,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         mainActivity = activity as MainActivity
-
 
         dataset = mainActivity.dataset
 
@@ -69,7 +67,6 @@ class HomeFragment : Fragment() {
                 adapter.newData(mainActivity.dataset)
                 binding.mainRV.scrollToPosition(0)
             }
-
             .setNegativeButton("cancel") { dialogInterface, _ ->
                 dialogInterface.cancel()
             }
