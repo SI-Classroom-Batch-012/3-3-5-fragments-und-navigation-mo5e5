@@ -4,6 +4,10 @@
 
     <!-- Head Text -->
 
+    <!-- Button Text -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
     <!-- Content Description -->
 
     <!-- Placeholder -->
