@@ -4,6 +4,7 @@
 
     <!-- Head Text -->
     <string name="best_note_app_on_world">Best Note</string>
+    <string name="your_note">Your Note</string>
 
     <!-- Button Text -->
     <string name="edit">Edit</string>
@@ -18,7 +19,5 @@
     <string name="placeholder">Placeholder</string>
     <string name="headline_placeholder">Hier Überschrift!</string>
     <string name="contentLine_placeholder">Hier eine Info!</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
