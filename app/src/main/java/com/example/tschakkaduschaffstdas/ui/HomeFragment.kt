@@ -16,13 +16,9 @@ import com.example.tschakkaduschaffstdas.ui.adapter.ItemAdapter
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
-
     private lateinit var adapter: ItemAdapter
     private lateinit var mainActivity: MainActivity
-
     private var dataset: List<Info> = emptyList()
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,

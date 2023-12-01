@@ -36,7 +36,11 @@ class ItemAdapter(private var dataset: List<Info>) :
 
         holder.binding.noteCard.setOnClickListener {
             val navController = holder.itemView.findNavController()
-            navController.navigate(HomeFragmentDirections.actionHomeFragmentToDetailFragment())
+            navController.navigate(
+                HomeFragmentDirections.actionHomeFragmentToDetailFragment(
+                    position
+                )
+            )
         }
     }
 }

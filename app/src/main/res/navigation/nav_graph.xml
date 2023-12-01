@@ -28,5 +28,8 @@
         android:name="com.example.tschakkaduschaffstdas.ui.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
     </fragment>
 </navigation>
