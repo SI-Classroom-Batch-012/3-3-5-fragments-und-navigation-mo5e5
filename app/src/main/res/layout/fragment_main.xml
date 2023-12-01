@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_CL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainFragment" />
+    tools:context=".ui.MainFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/header_MTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/best_note_app_on_world"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_FAB"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/new_note"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_MTV" />
+
+
+    <Button
+        android:id="@+id/home_BTN"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="@string/your_notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_FAB" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

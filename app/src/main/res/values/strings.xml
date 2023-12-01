@@ -3,12 +3,16 @@
     <string name="app_name">Tschakka du schaffst das</string>
 
     <!-- Head Text -->
+    <string name="best_note_app_on_world">Best Note</string>
 
     <!-- Button Text -->
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="your_notes">your notes</string>
+    <string name="new_note">new note</string>
 
     <!-- Content Description -->
+    <string name="button_add">Add Button</string>
 
     <!-- Placeholder -->
     <string name="placeholder">Placeholder</string>
