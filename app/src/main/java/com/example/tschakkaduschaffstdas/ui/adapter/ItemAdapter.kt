@@ -1,4 +1,4 @@
-package com.example.tschakkaduschaffstdas.data.adapter
+package com.example.tschakkaduschaffstdas.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

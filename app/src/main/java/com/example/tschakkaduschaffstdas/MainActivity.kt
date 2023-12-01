@@ -3,7 +3,7 @@ package com.example.tschakkaduschaffstdas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.tschakkaduschaffstdas.data.Datasource
-import com.example.tschakkaduschaffstdas.data.adapter.ItemAdapter
+import com.example.tschakkaduschaffstdas.ui.adapter.ItemAdapter
 import com.example.tschakkaduschaffstdas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
