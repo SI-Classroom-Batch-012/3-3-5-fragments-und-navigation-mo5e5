@@ -37,7 +37,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headline_MTV" />
 
-
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/contentLine_MTV"
             android:layout_width="match_parent"
@@ -49,32 +48,6 @@
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headline_MTV" />
-
-
-        <Button
-            android:id="@+id/edit_BTN"
-            android:layout_width="70dp"
-            android:layout_height="48dp"
-            android:backgroundTint="?attr/colorSecondary"
-            android:text="@string/edit"
-            android:textAlignment="center"
-            android:textColor="?attr/colorPrimary"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/contentLine_MTV" />
-
-        <Button
-            android:id="@+id/delete_BTN"
-            android:layout_width="88dp"
-            android:layout_height="48dp"
-            android:backgroundTint="@color/red"
-            android:text="@string/delete"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/contentLine_MTV" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

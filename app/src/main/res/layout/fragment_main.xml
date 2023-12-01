@@ -11,7 +11,6 @@
         android:id="@+id/header_MTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:text="@string/best_note_app_on_world"
         android:textAlignment="center"
         android:textColor="?attr/colorPrimary"
@@ -20,18 +19,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/add_FAB"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:text="@string/new_note"
-        android:textColor="?attr/colorSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_MTV" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
     <Button
@@ -43,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_FAB" />
+        app:layout_constraintTop_toBottomOf="@+id/header_MTV" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

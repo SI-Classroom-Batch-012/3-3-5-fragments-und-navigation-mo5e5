@@ -11,7 +11,6 @@ import com.example.tschakkaduschaffstdas.databinding.FragmentMainBinding
 class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -27,10 +26,6 @@ class MainFragment : Fragment() {
 
         binding.homeBTN.setOnClickListener {
             navController.navigate(MainFragmentDirections.actionMainFragmentToHomeFragment())
-        }
-
-        binding.addFAB.setOnClickListener {
-            navController.navigate(MainFragmentDirections.actionMainFragmentToDetailFragment())
         }
     }
 }

@@ -19,4 +19,14 @@
         app:spanCount="2"
         tools:listitem="@layout/list_item" />
 
+    <Button
+        android:id="@+id/add_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:textColor="?attr/colorSecondary"
+        android:text="@string/new_note"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
