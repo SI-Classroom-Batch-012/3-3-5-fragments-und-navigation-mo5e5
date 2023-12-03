@@ -29,8 +29,8 @@ class DetailFragment : Fragment() {
         val content = mainActivity.dataset[position]
 
 
-        binding.headlineMTV.setText(content.headline)
-        binding.contentLineMTV.setText(content.contentLine)
+        binding.headlineMTV.text = content.headline
+        binding.contentLineMTV.text = content.contentLine
 
     }
 }
