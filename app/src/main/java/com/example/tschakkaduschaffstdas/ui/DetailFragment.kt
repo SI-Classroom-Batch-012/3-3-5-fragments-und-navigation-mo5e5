@@ -28,8 +28,8 @@ class DetailFragment : Fragment() {
         val mainActivity = activity as MainActivity
         val content = mainActivity.dataset[position]
 
+
         binding.headlineMTV.text = content.headline
         binding.contentLineMTV.text = content.contentLine
-
     }
 }
