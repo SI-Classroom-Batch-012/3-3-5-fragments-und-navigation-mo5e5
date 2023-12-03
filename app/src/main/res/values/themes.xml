@@ -7,6 +7,8 @@
         <item name="colorSecondary">@color/white</item>
         <!-- Status Bar Color Style -->
         <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Cursor Color Style -->
+        <item name="android:textCursorDrawable">?attr/colorPrimary</item>
     </style>
 
     <style name="Theme.TschakkaDuSchaffstDas" parent="Base.Theme.TschakkaDuSchaffstDas" />
