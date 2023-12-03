@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.tschakkaduschaffstdas.MainActivity
 import com.example.tschakkaduschaffstdas.R
@@ -40,6 +42,10 @@ class DetailFragment : Fragment() {
 
         binding.editBTN.setOnClickListener {
             addNoteDialog(position)
+        }
+
+        binding.deleteBTN.setOnClickListener {
+            deleteNoteDialog(position)
         }
 
     }
@@ -77,5 +83,27 @@ class DetailFragment : Fragment() {
                 dialogInterface.cancel()
             }
             .show()
+    }
+
+    private fun deleteNoteDialog(position: Int) {
+
+        val mainActivity = activity as MainActivity
+        val infoToMutableList = mainActivity.dataset.toMutableList()
+
+        val dialogBuilder = AlertDialog.Builder(requireContext())
+        dialogBuilder.setMessage("do you really want to delete your note?")
+            .setCancelable(false)
+            .setPositiveButton("yes") { _, _ ->
+                infoToMutableList.removeAt(position)
+                mainActivity.dataset = infoToMutableList.toList()
+                adapter.notifyItemRemoved(position)
+                Toast.makeText(requireContext(), "note deleted", Toast.LENGTH_LONG).show()
+                findNavController().popBackStack()
+            }
+            .setNegativeButton("no") { note, _ ->
+                note.dismiss()
+            }
+        val alert = dialogBuilder.create()
+        alert.show()
     }
 }
